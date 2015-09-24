@@ -21,3 +21,21 @@ The game may be played solo or with 2 players.
 ##Aim of the game
 
 The aim of the game is to test the user's memory. During the 3 seconds in which the card is revealed the user has time to commit images and location to memory. The goal is to pair all cards in the minimum amount of turns.
+
+### Experience, Tech, bumps in the road
+
+__Styling__ <br>
+Playing with the transform function on different axises was very useful to create the desired flip animation.  <br>
+It was interesting styling different sized images as backgrounds to standard square boxes. It needed to be done in such a way that every picture regardless of dimension would fit and render nicely within each card/box.
+
+
+__Javascript__<br>
+I was pleasantly surprised to find I really loved coding in Javascript. The games logic could be coded in a huge variety of ways. 
+
+The logic I used was the following;<br>
+I created a JS object that mirrored the markup div's. When a card was turned for the first time, it would be assigned a random class (which assigned an image), JS would then assign a corresponding string to the mirror. The mirror JS object is used as a record to make sure when a card is subsequently turned, cards kept the same image, and that only 2 of that particular image is assigned.  
+
+The setTimeout function was used to make the image change exactly  at the halfway point during the transform animation. This gave the illusion that the card was turning over.
+
+__Markup__<br>
+The HTML markup was fairly straight forward with most of the effort put into setting up the grid.
